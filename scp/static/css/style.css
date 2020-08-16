@@ -1,0 +1,55 @@
+.header {
+	background-color: gray;
+}
+
+a.btn-outline-dark{
+	margin-bottom: 30px;
+}
+
+button.btn :hover{
+	color: grey;
+}
+
+button.editbtn{
+	margin-left: 5px;
+}
+
+div.nav{
+	vertical-align: middle;
+}
+
+table.table {
+	width: 1300px;             
+}
+
+td.edit{
+	width: 150px;
+}
+
+td.id {
+	vertical-align: middle;
+}
+
+td.number {
+	vertical-align: middle;
+}
+
+td.name{
+	vertical-align: middle;
+}
+
+th.top{
+	text-align: center;
+	background-color: #3399FF;
+	color: white;
+}
+
+div.plus{
+	text-align: center;
+}
+
+nav.nav{
+	margin-top: 30px;
+}
+
+

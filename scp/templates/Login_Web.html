@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ログイン画面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/style.css">
+		<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>	
+		<center><br><!-- 全体を中央揃え　-->	
+		<!-- 画像を表示 -->
+		<img src = "/static/images/SCP.png" width="150px" height="200px">
+
+		<!-- テキストを表示 -->
+		<div class="border-bottom border-primary" style="padding:10px;"><span class="text-info" >ログイン</span></div><br>
+		 
+		
+		<form action="/login" method="POST" >
+			<table>
+				<tr>		 
+					<td><!-- IDを入力 -->
+						<input class="form-control" type="text" id="text" name="ID" placeholder="ID"　 size="49" maxlength="32" autocomplete="OFF">
+					</td>
+				</tr>
+				<tr>
+					<td><!-- パスワードを入力-->
+						<input class="form-control" type="text" id="text" name="password" placeholder="パスワード"　size="49" maxlength="OFF">
+					</td>
+				</tr>
+			</table><br>
+
+			{% if status == "user_notfound" %}
+			<p>IDが間違っているか、存在しません。</p><br>
+			{% elif status == "wrong_password" %}
+			<p>パスワードが間違っています。</p><br>
+			{% elif status == "logout" %}
+			<p>ログアウトしました。</p><br>
+			{% endif %}
+
+			<div><!-- ログインボタン　-->
+				<input type="submit" class="btn btn-primary w-25" value="ログイン"></button>				
+			</div>
+		</form>
+	    </center>
+	</body>
+</html>

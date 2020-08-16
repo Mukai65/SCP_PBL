@@ -1,0 +1,126 @@
+.header {
+	background-color: #3399FF;
+
+}
+
+/* ナビゲーションバー */
+.nav-icon {
+	width: 250px;
+	height: 5em;
+	display: inline-flex;
+	align-items: center;
+	border: solid  #3399FF;
+}
+
+.icon-container {
+	width: 5em;
+	height: 5em;
+	background-color: #3399FF;
+	border-right: solid #3399FF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+}
+
+
+.nav-icon p {
+	margin: 0px auto;
+	color: #3399FF;
+}
+
+
+
+.sort-before, .sort-after {
+	display: none;
+}
+
+.sort-before.active, .sort-after.active {
+	display: block;
+}
+
+
+/* 当番表*/
+.week-col {
+	background-color: #3399FF;
+	border-width: medium;
+	border-style: solid;
+	border-color: white;
+	text-align: center;
+}
+
+.week {
+	background-color: #3399FF;
+	padding: 15px;
+}
+
+.list {
+	padding: 0px;
+}
+
+.list li {
+	background-color: white;
+	margin: 2px 0px;
+	padding: 5px 10px;
+	list-style: none;
+}
+
+/* 編集ボタン*/
+.icon {
+	width: 200px;
+	border-style: solid;
+	border-color: #3399FF;
+	display: none;
+	align-items: center;
+}
+
+.icon i {
+	background-color: #3399FF;
+	border-right: solid #3399FF;
+}
+
+.icon p {
+	margin: 0px auto;
+	color: #3399FF;
+}                                                      
+
+#sort-cancel {
+	border-color: #FF66FF;
+}
+
+#sort-cancel i {
+	background-color: #FF66FF;
+	border-right: solid #FF66FF;
+}
+
+#sort-cancel p {
+	color: #FF66FF;
+}
+
+
+.active .icon {
+	display: inline-flex;
+}
+
+div.high {
+	padding-top: 30px;
+	padding-bottom: 45px;
+}
+
+button.nav-btn {
+	border: none;
+	color: white;
+	background-color: white;
+}
+
+div.manage-btn {
+	border: none;
+	color: white;
+	background-color: white;
+}
+
+div.high {
+	margin-top: 30px;
+}

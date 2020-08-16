@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>出席回数表</title>
+ 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../static/css/all.min.css">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/Clean_Manage.css">
+  <link rel="stylesheet" href="../static/css/Attendance.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<!-- ヘッダー -->
+		<div class="header row py-3">
+			<div class="col  pr-5 text-right">
+				<button type="button" class="btn btn-outline-secondary bg-light btn-lg" onclick="location.href='http://127.0.0.1:5000/logout'">ログアウト</button>
+			</div>
+		</div>
+
+		<!-- ナビゲーション -->
+		<div class="row mt-3">
+			<div class="col text-center">
+				<div class="nav-icon" onclick="location.href='http://127.0.0.1:5000/index'">
+					<div class="icon-container">
+						<i class="fas fa-calendar-alt fa-4x"></i>
+					</div>
+					<p>掃除当番表</p>
+				</div>
+				<div class="nav-icon">
+					<div class="icon-container">
+						<i class="fas fa-address-book fa-4x"></i>
+					</div>
+					<p>出欠席回数表</p>
+				</div>
+				<div class="nav-icon" onclick="location.href='http://127.0.0.1:5000/account'">
+					<div class="icon-container">
+						<i class="fas fa-calendar-check fa-4x"></i>
+					</div>
+					<p>アカウント管理</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<div class="mx-auto">クラス:{{classname}} ID:{{name}}</div>
+    </div>
+
+    <center><br><!-- 表の中央揃え-->
+        <table border="1"><!-- 表の作成 -->
+                <tr>
+                  <th >出席番号</th><th>名前</th><th>今月欠席回数</th><th>累計欠席回数</th>
+				</tr>
+				{% for student in students %}
+                <tr>
+                    <td>{{student.number}}</td><td>{{student.name}}</td><td>{{student.month}}</td><td>{{student.total}}</td>
+				</tr>
+				{% endfor %}
+        </table>
+    </center>
+		
+	<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<script type="text/javascript" src="../static/js/Clean_Manage.js"></script>
+</body>
+</html>

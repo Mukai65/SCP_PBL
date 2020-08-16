@@ -1,0 +1,28 @@
+input.form-control {
+    width: 60%;
+}
+
+form{
+    margin-top: 5%;
+    margin-left: 29%;
+}
+
+button.btn1 {
+    width: 120px;
+    margin-left:150px;
+    margin-top: 50px;
+}
+
+button.btn2 {
+    width: 120px;
+    margin-left: 115px;
+    margin-top: 50px;
+}
+
+div.edit-text {
+    margin-top: 30px
+}
+
+table.table {
+    margin-top: 50px;
+}

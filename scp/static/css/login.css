@@ -1,0 +1,36 @@
+table{
+    width:760px
+    }
+table {width: 48%}/*レズポンシブ*/
+    
+table {
+    border-collapse: collapse;
+    border: solid 2px #3399FF;/*表全体を線で囲う*/
+  }
+  table th, table td {
+    border: solid 1px rgb(132, 193, 255);/**/
+    /*破線 1px オレンジ*/
+  }
+
+table th{/*thに対して*/
+    text-align: center;/*中央揃え*/
+    color: White;/*文字色*/
+    background: #3399FF;/*背景色*/
+  }
+
+table th {/*table内のthに対して*/
+    padding: 10px;/*上下左右10pxずつ*/
+  }
+  
+  table td {/*table内のtdに対して*/
+    padding: 3px 10px;/*上下3pxで左右10px*/
+  }
+
+  table {
+    border-collapse: collapse;
+    border: solid 1px #888;
+  }
+  th, td {
+    padding: 5px 15px; /* 上下 左右 */
+    border: dashed 1px #a8d4f3;
+  }

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>アカウント追加</title>
+ <!--気にするな-->
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="../static/css/all.min.css">
+ <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+ <link rel="stylesheet" href="../static/css/Clean_Manage.css">
+ <link rel="stylesheet" href="../static/css/Create New.css">
+
+</head>
+<body>
+ <div class="container-fluid">
+	 <!-- ヘッダー -->
+	 <div class="header row py-3">
+		 <div class="col  pr-5 text-right">
+			 <button type="button" class="btn btn-outline-secondary bg-light btn-lg" onclick="location.href='http://127.0.0.1:5000/logout'">ログアウト</button>
+		 </div>
+	 </div>
+
+	
+	 <div class="row mt-3">
+		<div class="mx-auto add-text">アカウント追加</div>
+　　</div>
+	
+	<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/account.js"></script>
+    
+    
+
+<!-- フォーム -->
+<form action="/create_process" method="POST">
+	<div class="form-group">
+	  <label for="input_name">氏名</label>
+	  <input type="text" class="form-control" id="text" name="name" placeholder="氏名">
+	</div>
+	<div class="form-group">
+		<label for="input_id">ID(学籍番号)</label>
+		<input type="text" class="form-control" id="text" name="id" placeholder="ID(学籍番号)">
+	</div>
+	<div class="form-group">
+		<label for="input_number">出席番号</label>
+		<input type="text" class="form-control" id="text" name="number" placeholder="出席番号">
+	</div>
+	<div class="form-group">
+		<label for="input_day">曜日</label>
+		<select class="form-control" id="day" name="day" placeholder="曜日">
+			<option value ="mon">月</option>
+			<option value ="tue">火</option>
+			<option value ="wed">水</option>
+			<option value ="thu">木</option>
+			<option value ="fri">金</option>
+		</select>
+	</div>  
+	<div class="form-group">
+	  <label for="input_password">パスワード</label>
+	  <input type="password" class="form-control" id="input_password" name="password" placeholder="パスワード">
+	</div>
+		<button type="button" class="btn btn-danger btn1" onclick="location.href='http://127.0.0.1:5000/account'">キャンセル</button>
+		<button type="submit" class="btn btn-primary btn2">完了</button>
+	<!--
+	<a href="account.html">
+		<button type="button" class="btn btn-outline-secondary bg-light btn-lg" onclick="location.href='account.html'">キャンセル</button>		
+	</a>
+	<a href="account.html">
+		<button type="button" class="btn btn-primary btn-lg w-20" onclick="location.href='account.html'">追加</button>
+	</a>
+	-->
+  </form>
+
+
+</body>
+</html>

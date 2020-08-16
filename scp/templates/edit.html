@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>掃除管理</title>
+ <!--気にするな-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="../static/css/all.min.css">
+	<link rel="stylesheet" href="../static/css/Clean_Manage.css">
+	<link rel="stylesheet" href="../static/css/Create New.css">
+	<link rel="stylesheet" href="../static/css/edit.css">
+
+</head>
+<body>
+	<header>
+		<div class="header">
+			<!--ヘッダーとログアウトボタン-->
+			<div class="header row py-3">
+				<div class="col  pr-5 text-right">
+					<button type="button" class="btn btn-outline-secondary bg-light btn-lg" onclick="location.href='http://127.0.0.1:5000/logout'">ログアウト</button>
+				</div>
+			</div>
+		</header>
+	<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+
+	<script type="text/javascript" src="edit.js"></script>
+
+
+	<!-- table -->
+	<div class="col-md-12 table-edit">
+		<table class="table table-bordered container">
+		<thead>
+			<tr>
+				<th class="id top">ID</th>
+				<th class="number top">出席番号</th>
+				<th class="name top">名前</th>
+			</tr>
+		</thead>
+		<!-- ここに編集する人の情報が入る -->
+		<tbody>
+			<tr>
+				<td class="id" id="ids">{{students.id}}</td>
+				<td class="number">{{students.number}}</td>
+				<td class="name">{{students.name}}</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<center>
+	<div class="row mt-3">
+		<div class="mx-auto edit-text">アカウント編集</div>
+	</div>
+	</center>
+<!-- フォーム -->
+	<form action="/edit_process" method="POST">
+		<div class="form-group">
+		  <label for="exampleInputEmail1">氏名</label>
+		  <input type="text" class="form-control" name="name" id="text" placeholder="名前">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">出席番号</label>
+			<input type="text" name="number" class="form-control" id="exampleInputPassword1" placeholder="出席番号">
+		  </div>
+		<div class="form-group">
+		  <label for="exampleInputPassword1">パスワード</label>
+		  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+		</div>
+			<button type="button" class="btn btn-danger btn1" onclick="location.href='http://127.0.0.1:5000/account'">キャンセル</button>
+			<button type="submit" class="btn btn-primary btn2">完了</button>
+	  </form>
+
+
+	<!-- <script>
+		$('.btn2').click(function() {
+			//入力チェック
+			if(document.form.input1.value == ""){
+				var mesage = alert("必須項目です。");
+			}
+			//完了・キャンセルボタン
+			var edit = alert("変更が完了しました。");
+			if(edit == true){
+				Location.href = "account.html";
+			}
+			else if(edit = false){
+				Location.href = "account.html";
+			}
+		});
+
+		$('.btn1').click(function(){
+			location.href = "account.html";
+		});
+	</script> -->
+
+
+</body>
+</html>

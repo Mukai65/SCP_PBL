@@ -1,0 +1,67 @@
+table{
+    width:760px
+    }
+table {width: 48%}/*レズポンシブ*/
+    
+table {
+    border-collapse: collapse;
+    border: solid 2px #3399FF;/*表全体を線で囲う*/
+  }
+  table th, table td {
+    border: solid 1px rgb(132, 193, 255);
+    
+  }
+
+table th{/*thに対して*/
+    text-align: center;/*中央揃え*/
+    color: White;/*文字色*/
+    background: #3399FF;/*背景色*/
+  }
+
+table th {/*table内のthに対して*/
+    padding: 10px;/*上下左右10pxずつ*/
+  }
+  
+  table td {/*table内のtdに対して*/
+    padding: 8px 10px;/*上下8pxで左右10px*/
+  }
+
+  table {
+    border-collapse: collapse;
+    border: solid 1px #888;
+  }
+ 
+  input.form-control {
+    width: 60%;
+}
+
+#day{width: 60%;}
+
+div.add-text{
+  margin-top: 30px;
+}
+
+form{
+    margin-top: 5%;
+    margin-left: 29%;
+}
+
+button.btn1 {
+    width: 120px;
+    margin-left:150px;
+    margin-top: 50px;
+}
+
+button.btn2 {
+    width: 120px;
+    margin-left: 115px;
+    margin-top: 50px;
+}
+
+div.edit-text {
+    margin-top: 30px
+}
+
+table.table {
+    margin-top: 50px;
+}
